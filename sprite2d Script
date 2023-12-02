@@ -1,18 +1,11 @@
-```python
-class Coder(BaseHuman):
+```C++
+extands KinematicBody 2d
 
-def _intit_(self):
-  coffee.strength+++
-  env.update()
-  env.theme = Light
-def day(self):
-  self.eat(1*hrs)
-  self.code(8*hrs)
-  self.workout(1*hrs)
-  self.debug(6*hrs)
-  time.sleep(8*hrs)
-if developer.is_tired():
-   developer.drink_coffee()
-else
-   developer.code()
+const UP = Vector2(0,-1)
+const GRAVITY = 20
+const MAXFALLSPEED = 200
+const MAXSPEED = 80 
+var motion = Vector2()
+
+func_ready():
 ```
