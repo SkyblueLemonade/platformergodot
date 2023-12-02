@@ -18,5 +18,6 @@ func_physics_process(delta):
       motion.x = MAXSPEED
     elif Input.is_action_pressed("left"):
       motion.x + -MAXSPEED
-
+    else:
+      motion.x = 0
 ```
