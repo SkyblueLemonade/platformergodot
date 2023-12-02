@@ -1,1 +1,18 @@
-s
+```python
+class Coder(BaseHuman):
+
+def _intit_(self):
+  coffee.strength+++
+  env.update()
+  env.theme = Light
+def day(self):
+  self.eat(1*hrs)
+  self.code(8*hrs)
+  self.workout(1*hrs)
+  self.debug(6*hrs)
+  time.sleep(8*hrs)
+if developer.is_tired():
+   developer.drink_coffee()
+else
+   developer.code()
+```
