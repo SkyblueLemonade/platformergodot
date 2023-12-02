@@ -8,4 +8,12 @@ const MAXSPEED = 80
 var motion = Vector2()
 
 func_ready():
+  pass
+func_physics_process(delta):
+
+    motion.y +- GRAVITY
+    if motion.y >= MAXFALLSPEED:
+      motion.y = MAXFALLSPEED
+    if INput.is_actin_processed("right"):
+      motin.x = MAXSPEED
 ```
