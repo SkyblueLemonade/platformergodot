@@ -14,6 +14,7 @@ func_physics_process(delta):
     motion.y +- GRAVITY
     if motion.y >= MAXFALLSPEED:
       motion.y = MAXFALLSPEED
-    if INput.is_actin_processed("right"):
-      motin.x = MAXSPEED
+    if Input.is_action_preessed("right"):
+      motion.x = MAXSPEED
+    elif Input.is_action_pressed("left"):
 ```
