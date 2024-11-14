@@ -1,1 +1,19 @@
-T
+extends Node
+
+# ตัวแปรเก็บค่าเวลาที่ผ่านไป
+var time_elapsed = 0
+
+# อ้างอิงไปยัง Label node
+onready var time_label = $Label
+
+# ฟังก์ชันนี้จะถูกเรียกทุก ๆ เฟรม โดย delta คือเวลาที่ผ่านไปตั้งแต่เฟรมก่อนหน้า
+func _process(delta):
+    # เพิ่มค่า time_elapsed ด้วย delta เพื่อเก็บค่าเวลาที่ผ่านไปทั้งหมด
+    time_elapsed += delta
+
+    # คำนวณเวลาในหน่วยนาทีและวินาที
+    var minutes = int(time_elapsed) / 60
+    var seconds = int(time_elapsed) % 60
+
+    # อัปเดตข้อความใน Label ให้แสดงเวลาทั้งนาทีและวินาที
+    time_label.text = str(minutes) + " นาที " + str(seconds) + " วินาที"
